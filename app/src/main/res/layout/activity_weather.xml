@@ -10,7 +10,7 @@
         android:id="@+id/weather"
         android:layout_width="match_parent"
         android:layout_height="10dp"
-        android:layout_weight="0.5"
+        android:layout_weight="0.35"
         android:name="vn.edu.usth.weather.WeatherFragment" />
     <fragment
         android:id="@+id/forecast"
