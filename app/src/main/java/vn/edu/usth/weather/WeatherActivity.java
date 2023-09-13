@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
 
 public class WeatherActivity extends AppCompatActivity {
 
@@ -11,6 +12,9 @@ public class WeatherActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
+        ForecastFragment ff = new ForecastFragment();
+        // Add the fragment to the 'container' FrameLayout
+        getSupportFragmentManager().beginTransaction().add(R.id.container, ff).commit();
     }
 
     @Override
@@ -42,4 +46,5 @@ public class WeatherActivity extends AppCompatActivity {
         super.onResume();
         Log.i("Weather","onResume() called");
     }
+
 }
