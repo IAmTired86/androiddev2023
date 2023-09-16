@@ -1,5 +1,62 @@
 <resources>
     <string name="app_name">USTH Weather</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sunny">Sunny</string>
+    <string name="partsunny">Partly Sunny</string>
+    <string name="rain">Rain</string>
+    <string name="storm">Storm</string>
+    <string name="cloud">Cloudy</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+    <string name="sunday">Sun</string>
+    <string name="hanoi">Hanoi</string>
+    <string name="paris" translatable="false">Paris</string>
+    <string name="toulouse" translatable="false">Toulouse</string>
+
+    <string name="C0" translatable="false">0C</string>
+    <string name="C1" translatable="false">1C</string>
+    <string name="C2" translatable="false">2C</string>
+    <string name="C3" translatable="false">3C</string>
+    <string name="C4" translatable="false">4C</string>
+    <string name="C5" translatable="false">5C</string>
+    <string name="C6" translatable="false">6C</string>
+    <string name="C7" translatable="false">7C</string>
+    <string name="C8" translatable="false">8C</string>
+    <string name="C9" translatable="false">9C</string>
+    <string name="C10" translatable="false">10C</string>
+    <string name="C11" translatable="false">11C</string>
+    <string name="C12" translatable="false">12C</string>
+    <string name="C13" translatable="false">13C</string>
+    <string name="C14" translatable="false">14C</string>
+    <string name="C15" translatable="false">15C</string>
+    <string name="C16" translatable="false">16C</string>
+    <string name="C17" translatable="false">17C</string>
+    <string name="C18" translatable="false">18C</string>
+    <string name="C19" translatable="false">19C</string>
+    <string name="C20" translatable="false">20C</string>
+    <string name="C21" translatable="false">21C</string>
+    <string name="C22" translatable="false">22C</string>
+    <string name="C23" translatable="false">23C</string>
+    <string name="C24" translatable="false">24C</string>
+    <string name="C25" translatable="false">25C</string>
+    <string name="C26" translatable="false">26C</string>
+    <string name="C27" translatable="false">27C</string>
+    <string name="C28" translatable="false">28C</string>
+    <string name="C29" translatable="false">29C</string>
+    <string name="C30" translatable="false">30C</string>
+    <string name="C31" translatable="false">31C</string>
+    <string name="C32" translatable="false">32C</string>
+    <string name="C33" translatable="false">33C</string>
+    <string name="C34" translatable="false">34C</string>
+    <string name="C35" translatable="false">35C</string>
+    <string name="C36" translatable="false">36C</string>
+    <string name="C37" translatable="false">37C</string>
+    <string name="C38" translatable="false">38C</string>
+    <string name="C39" translatable="false">39C</string>
+
+
 </resources>

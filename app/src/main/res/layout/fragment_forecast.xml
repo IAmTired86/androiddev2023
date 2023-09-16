@@ -24,7 +24,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Mon"
+                android:text="@string/mon"
                 android:textSize="15sp" />
 
             <ImageView
@@ -44,7 +44,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Sunny"
+                    android:text="@string/sunny"
                     android:textSize="15sp" />
 
                 <TextView
@@ -68,7 +68,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Tue"
+                android:text="@string/tue"
                 android:textSize="15sp" />
 
             <ImageView
@@ -88,7 +88,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Mostly cloud"
+                    android:text="@string/partsunny"
                     android:textSize="15sp" />
 
                 <TextView
@@ -112,7 +112,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Wed"
+                android:text="@string/wed"
                 android:textSize="15sp" />
 
             <ImageView
@@ -132,7 +132,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Partly Cloud"
+                    android:text="@string/partsunny"
                     android:textSize="15sp" />
 
                 <TextView
@@ -156,7 +156,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Thu"
+                android:text="@string/thu"
                 android:textSize="15sp" />
 
             <ImageView
@@ -176,7 +176,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Partly Cloud"
+                    android:text="@string/partsunny"
                     android:textSize="15sp" />
 
                 <TextView
@@ -200,7 +200,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Fri"
+                android:text="@string/fri"
                 android:textSize="15sp" />
 
             <ImageView
@@ -220,7 +220,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Rain"
+                    android:text="@string/rain"
                     android:textSize="15sp" />
 
                 <TextView
@@ -244,7 +244,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Sat"
+                android:text="@string/sat"
                 android:textSize="15sp" />
 
             <ImageView
@@ -264,7 +264,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Storm"
+                    android:text="@string/storm"
                     android:textSize="15sp" />
 
                 <TextView
@@ -288,7 +288,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Sun"
+                android:text="@string/sunday"
                 android:textSize="15sp" />
 
             <ImageView
@@ -308,7 +308,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Storm"
+                    android:text="@string/storm"
                     android:textSize="15sp" />
 
                 <TextView
@@ -333,7 +333,7 @@
                 android:layout_weight="1"
                 android:textSize="15sp"
                 android:gravity="center"
-                android:text="Mon" />
+                android:text="@string/mon" />
 
             <ImageView
                 android:layout_width="0dp"
@@ -352,7 +352,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Rain"
+                    android:text="@string/rain"
                     android:textSize="15sp" />
 
                 <TextView
@@ -376,7 +376,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Tue"
+                android:text="@string/tue"
                 android:textSize="15sp" />
 
             <ImageView
@@ -396,7 +396,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Mostly Cloud"
+                    android:text="@string/partsunny"
                     android:textSize="15sp" />
 
                 <TextView
@@ -420,7 +420,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Wed"
+                android:text="@string/wed"
                 android:textSize="15sp" />
 
             <ImageView
@@ -440,7 +440,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Sunny"
+                    android:text="@string/sunny"
                     android:textSize="15sp" />
 
                 <TextView
