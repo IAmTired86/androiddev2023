@@ -3,25 +3,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2000FF00"
     tools:context=".WeatherFragment">
-
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/frame" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="146dp"
+        android:layout_height="103dp"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="0dp"
-        android:text="12C\nCloudy" />
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingTop="35dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/C12" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/partsunny" />
+
+    </LinearLayout>
+
 
     <TextView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:text="Paris"
+        android:paddingTop="35dp"
+        android:paddingRight="30dp"
+        android:text="@string/paris"
         android:textSize="20dp" />
 
     <ImageView
-        android:src="@drawable/partlysunny"
+        android:src="@drawable/cloudy"
         android:layout_centerInParent="true"
         android:layout_width="100dp"
         android:layout_height="100dp" />
