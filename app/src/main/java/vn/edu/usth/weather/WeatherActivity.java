@@ -16,6 +16,13 @@ import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
+
+
 public class WeatherActivity extends AppCompatActivity {
 
     @Override
@@ -29,7 +36,7 @@ public class WeatherActivity extends AppCompatActivity {
         pager.setAdapter(adapter);
         TabLayout tabLayout = (TabLayout) findViewById(R.id.header);
         tabLayout.setupWithViewPager(pager);
-        MediaPlayer mp = MediaPlayer.create(getBaseContext(), R.raw.lol);
+        MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.lol);
         mp.start();
     }
 
@@ -42,9 +49,7 @@ public class WeatherActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int itemId = item.getItemId();
         if (itemId == R.id.refresh) {
-            Toast toast = Toast.makeText(this, "Refresh", Toast.LENGTH_SHORT);
-            toast.show();
-            super.onRestart();
+            Refresh();
 
         } else if (itemId == R.id.setting) {
             Intent intent = new Intent(this, PrefActivity.class);
@@ -108,6 +113,38 @@ public class WeatherActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int page) {
             return titles[page];
         }
+    }
+    public void Refresh() {
+        final Handler handler = new Handler(Looper.getMainLooper()) {
+            @Override
+            public void handleMessage(Message msg) {
+                // main thread
+                String content = msg.getData().getString("Server Response");
+                Toast toast = Toast.makeText(getApplicationContext(), content, Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        };
+        Thread th = new Thread(() -> {
+            // worker thread
+            try {
+                int i;
+                for (i = 0; i < 10; i++) {
+                    Log.i("Weather", "loop" + i);
+                    Thread.sleep(1000);
+                }
+
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            // Assume we got data from server
+            Bundle bundle = new Bundle();
+            bundle.putString("Server Response", "Refreshing");
+            // notify main thread
+            Message msg = new Message();
+            msg.setData(bundle);
+            handler.sendMessage(msg);
+        });
+        th.start();
     }
 
 
